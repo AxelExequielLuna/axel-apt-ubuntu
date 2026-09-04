@@ -5,44 +5,26 @@ Origin: Axel APT (Ubuntu)
 Label: Axel APT (Ubuntu)
 Suite: stable
 Codename: ubuntu2404
-Date: Fri, 04 Sep 2026 19:46:16 UTC
-Architectures: amd64 arm64 i386
+Date: Fri, 04 Sep 2026 19:54:07 UTC
+Architectures: amd64
 Components: main
 Description: Axel's apps for Ubuntu-based Mint
 MD5Sum:
  4e409368b1e60b66cee393c79133af9e 1004 main/binary-amd64/Packages
  301581291a365d9feb2d15c6cc53f405 639 main/binary-amd64/Packages.gz
  ed414aae5c54ad086f873bb0df6dcba1 150 main/binary-amd64/Release
- 4e409368b1e60b66cee393c79133af9e 1004 main/binary-arm64/Packages
- 301581291a365d9feb2d15c6cc53f405 639 main/binary-arm64/Packages.gz
- 1070469f812a2bdb78a6c9f21f1bb756 150 main/binary-arm64/Release
- 4e409368b1e60b66cee393c79133af9e 1004 main/binary-i386/Packages
- 301581291a365d9feb2d15c6cc53f405 639 main/binary-i386/Packages.gz
- f469436c9dcad136f58b7f6db3803e09 149 main/binary-i386/Release
 SHA1:
  058696e0de800df2a841bd38b35cdeef05fd0273 1004 main/binary-amd64/Packages
  cbb9b0d39408b6fcafc16b3f409e5eee7774b7dd 639 main/binary-amd64/Packages.gz
  bd4cc77f1a027f086a38fc546a38a718f2588395 150 main/binary-amd64/Release
- 058696e0de800df2a841bd38b35cdeef05fd0273 1004 main/binary-arm64/Packages
- cbb9b0d39408b6fcafc16b3f409e5eee7774b7dd 639 main/binary-arm64/Packages.gz
- f67ed7f341fe5c0ab05f1eb6c4cdfe9b88518390 150 main/binary-arm64/Release
- 058696e0de800df2a841bd38b35cdeef05fd0273 1004 main/binary-i386/Packages
- cbb9b0d39408b6fcafc16b3f409e5eee7774b7dd 639 main/binary-i386/Packages.gz
- 87929c48ffbc02311465c1436277c86e5afa1d74 149 main/binary-i386/Release
 SHA256:
  ad56a67eee0948bc4d75ca3ce85dbcfa1b91223e76172cdfa5939bcfeabfb3be 1004 main/binary-amd64/Packages
  060f3309a1fcee501521f5a030efa493e1279e70cedc9f666c323ff9082c77d6 639 main/binary-amd64/Packages.gz
  9ee1c21f61015c5a5eb70f97222850faea472143eaa86be769e5fbd0a8ce6ec8 150 main/binary-amd64/Release
- ad56a67eee0948bc4d75ca3ce85dbcfa1b91223e76172cdfa5939bcfeabfb3be 1004 main/binary-arm64/Packages
- 060f3309a1fcee501521f5a030efa493e1279e70cedc9f666c323ff9082c77d6 639 main/binary-arm64/Packages.gz
- 6466fac184a9993eeb255b1055492b1b4150227cff864b98d588084a0c9026b0 150 main/binary-arm64/Release
- ad56a67eee0948bc4d75ca3ce85dbcfa1b91223e76172cdfa5939bcfeabfb3be 1004 main/binary-i386/Packages
- 060f3309a1fcee501521f5a030efa493e1279e70cedc9f666c323ff9082c77d6 639 main/binary-i386/Packages.gz
- 7251ff568ff86aa175debc27eb02f2510f33b9f557b2d294b699e3e2b472711f 149 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQQHuT4kdybqvh+SC0XwKh+neD2j0gUCapsgCAAKCRDwKh+neD2j
-0sHSAP49cClLkYjRxzTO+2P01fUhEc5AY1x6c5UdNkWDx0me7wD9E0FLywCkiukL
-Q7qcnBlKXaCtbIHjrYS1sXbJDxyuaw8=
-=+xZ8
+iHUEARYIAB0WIQQHuT4kdybqvh+SC0XwKh+neD2j0gUCapsh3wAKCRDwKh+neD2j
+0sWNAP4k9nNpeBb7AyOxILYDllW2i970PRLQydLL4oYNBia0ywD8DgBkgH7ewD2R
+JOdEtqngHN3s8D0cFk+5bo8UC+VOuwA=
+=8Va8
 -----END PGP SIGNATURE-----

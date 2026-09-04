@@ -3,7 +3,7 @@ Label: Axel APT (Ubuntu)
 Suite: stable
 Codename: ubuntu2204
 Components: main
-Architectures: amd64 arm64 i386
+Architectures: amd64
 SignWith: yes
 Description: Axel's apps for Ubuntu-based Mint
 
@@ -12,6 +12,6 @@ Label: Axel APT (Ubuntu)
 Suite: stable
 Codename: ubuntu2404
 Components: main
-Architectures: amd64 arm64 i386
+Architectures: amd64
 SignWith: yes
 Description: Axel's apps for Ubuntu-based Mint
