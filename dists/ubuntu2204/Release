@@ -2,19 +2,19 @@ Origin: Axel APT (Ubuntu)
 Label: Axel APT (Ubuntu)
 Suite: stable
 Codename: ubuntu2204
-Date: Fri, 04 Sep 2026 18:55:59 UTC
+Date: Fri, 04 Sep 2026 19:13:29 UTC
 Architectures: amd64
 Components: main
 Description: Axel's apps for Ubuntu-based Mint
 MD5Sum:
- 872f85c0a46b3e81e965dd8a54f1bee4 982 main/binary-amd64/Packages
- 51ea311bc030e52172fe1b537e373a07 631 main/binary-amd64/Packages.gz
+ b6cea0a1505868b5710fef853075ea49 1004 main/binary-amd64/Packages
+ aa18ebbcfed8945fa6bdff6ae43f19d9 639 main/binary-amd64/Packages.gz
  ed414aae5c54ad086f873bb0df6dcba1 150 main/binary-amd64/Release
 SHA1:
- 98cebe5b1d2d82691e8010e817644cec8ad5cabd 982 main/binary-amd64/Packages
- ad36a41a64b417b62f92524b2ca1937bc0453e4b 631 main/binary-amd64/Packages.gz
+ ede612d8c59b8d18902b18536f2826dc4149d196 1004 main/binary-amd64/Packages
+ d82d940c9bd6976c03022c8fd28d94a21eb9192b 639 main/binary-amd64/Packages.gz
  bd4cc77f1a027f086a38fc546a38a718f2588395 150 main/binary-amd64/Release
 SHA256:
- c715a2afd4158c422307a9d1b2df525a82ccb2632780aac1cc85a7eb12adb31f 982 main/binary-amd64/Packages
- 345327c06156d0204699f531178203957d9807813ce938020d020a3bcccb7f0d 631 main/binary-amd64/Packages.gz
+ 8d99d57020d4c6eb51c728c9d18ba4c1cf9121dae4ee687d1175ade8ae6902f4 1004 main/binary-amd64/Packages
+ 531f248157e3906cebe1bc095aa01e66aace576528d3fe77e17d0a041d2d2fab 639 main/binary-amd64/Packages.gz
  9ee1c21f61015c5a5eb70f97222850faea472143eaa86be769e5fbd0a8ce6ec8 150 main/binary-amd64/Release
