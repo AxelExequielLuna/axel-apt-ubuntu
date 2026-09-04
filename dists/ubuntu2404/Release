@@ -1,0 +1,20 @@
+Origin: Axel APT (Ubuntu)
+Label: Axel APT (Ubuntu)
+Suite: stable
+Codename: ubuntu2404
+Date: Fri, 04 Sep 2026 19:00:47 UTC
+Architectures: amd64
+Components: main
+Description: Axel's apps for Ubuntu-based Mint
+MD5Sum:
+ d7020e872192fc34d3d7c49c6bc0ecd2 982 main/binary-amd64/Packages
+ 31d25767ad8c6f9fad624b80f6e9d00e 631 main/binary-amd64/Packages.gz
+ ed414aae5c54ad086f873bb0df6dcba1 150 main/binary-amd64/Release
+SHA1:
+ 6182bc336d646a27b154b96d36abee8dfcea3d5f 982 main/binary-amd64/Packages
+ 1a9aadf578da06218f2df6e61c500bee55de09cb 631 main/binary-amd64/Packages.gz
+ bd4cc77f1a027f086a38fc546a38a718f2588395 150 main/binary-amd64/Release
+SHA256:
+ 78ccf1bda977f34e801617416f8997631184e716c8abd1122444027f9e1fa03c 982 main/binary-amd64/Packages
+ a36e41127a5d4d02b3f72e6c22330a3d7afcc5538f6163b368cfece1c3116612 631 main/binary-amd64/Packages.gz
+ 9ee1c21f61015c5a5eb70f97222850faea472143eaa86be769e5fbd0a8ce6ec8 150 main/binary-amd64/Release
