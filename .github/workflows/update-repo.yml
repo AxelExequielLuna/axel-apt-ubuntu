@@ -23,7 +23,6 @@ jobs:
       VERSION: ${{ github.event.client_payload.version }}
       CODENAME: ${{ github.event.client_payload.codename }}
       ARTIFACT: ${{ github.event.client_payload.artifact }}
-      KEEP_VERSIONS: "2"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,13 +44,12 @@ jobs:
           curl -fsSL -o "incoming/$ARTIFACT" \
             "https://github.com/$APP_REPO/releases/download/$TAG/$ARTIFACT"
 
-      - name: Include package
+      - name: Include package and prune older versions
         run: |
+          PKGVER="$VERSION-1"
           reprepro -b . includedeb "$CODENAME" "incoming/$ARTIFACT"
-
-      - name: Prune older versions
-        run: |
-          reprepro -b . keeps "$CODENAME" "$KEEP_VERSIONS"
+          # Mantener solo la versión recién publicada (poda de versiones viejas).
+          reprepro -b . removefilter "$CODENAME" "Package (== $APP), Version (!= $PKGVER)"
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
