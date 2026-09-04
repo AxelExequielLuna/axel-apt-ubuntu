@@ -46,8 +46,18 @@ jobs:
 
       - name: Include package and prune older versions
         run: |
-          PKGVER="$VERSION-1"
-          reprepro -b . includedeb "$CODENAME" "incoming/$ARTIFACT"
+          set -e
+          # El pool de reprepro es COMPARTIDO entre codenames y deriva el nombre
+          # del archivo del control del paquete. Dos codenames con el mismo
+          # (pkg, ver, arch) pisarían el .deb del otro aunque el contenido (venv)
+          # sea distinto. Se repackea con una revisión "+<codename>" para que cada
+          # base tenga su propio archivo de pool y su versión.
+          PKGVER="$VERSION-1+$CODENAME"
+          rm -rf "repack/$CODENAME"
+          dpkg-deb -R "incoming/$ARTIFACT" "repack/$CODENAME"
+          sed "s/^Version:.*/Version: $PKGVER/" -i "repack/$CODENAME/DEBIAN/control"
+          dpkg-deb --build --root-owner-group "repack/$CODENAME" "incoming/$CODENAME.deb"
+          reprepro -b . includedeb "$CODENAME" "incoming/$CODENAME.deb"
           # Mantener solo la versión recién publicada (poda de versiones viejas).
           reprepro -b . removefilter "$CODENAME" "Package (== $APP), Version (!= $PKGVER)"
 
