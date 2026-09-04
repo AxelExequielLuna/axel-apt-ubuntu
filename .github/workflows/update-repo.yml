@@ -4,7 +4,7 @@ on:
   repository_dispatch:
     types: [publish]
 
-# Serializa los dispatches que llegan a este repo (p. ej. ubuntu2204 y ubuntu2404)
+# Serializa los dispatches que llegan a este repo (p. ej. debian12 y debian13)
 # para no pisarse en el push a la rama.
 concurrency:
   group: apt-repo-publish
@@ -51,7 +51,16 @@ jobs:
           # Mantener solo la versión recién publicada (poda de versiones viejas).
           reprepro -b . removefilter "$CODENAME" "Package (== $APP), Version (!= $PKGVER)"
 
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Publish $APP $VERSION into $CODENAME"
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish $APP $VERSION into $CODENAME" || echo "Nada que commitear"
+          for i in 1 2 3 4 5; do
+            if git push origin main; then
+              break
+            fi
+            echo "push rechazado (race), rebeaseo e intento de nuevo ($i)"
+            git pull --rebase origin main
+          done
