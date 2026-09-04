@@ -1,30 +1,30 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 Origin: Axel APT (Ubuntu)
 Label: Axel APT (Ubuntu)
 Suite: stable
 Codename: ubuntu2404
-Date: Fri, 04 Sep 2026 19:54:07 UTC
+Date: Fri, 04 Sep 2026 20:54:40 UTC
 Architectures: amd64
 Components: main
 Description: Axel's apps for Ubuntu-based Mint
 MD5Sum:
- 4e409368b1e60b66cee393c79133af9e 1004 main/binary-amd64/Packages
- 301581291a365d9feb2d15c6cc53f405 639 main/binary-amd64/Packages.gz
+ f10017433ce2dba025e0b82809d70ace 1004 main/binary-amd64/Packages
+ d162849b1889272fa7d1a4488bb993e5 640 main/binary-amd64/Packages.gz
  ed414aae5c54ad086f873bb0df6dcba1 150 main/binary-amd64/Release
 SHA1:
- 058696e0de800df2a841bd38b35cdeef05fd0273 1004 main/binary-amd64/Packages
- cbb9b0d39408b6fcafc16b3f409e5eee7774b7dd 639 main/binary-amd64/Packages.gz
+ 823164c8e91e1fd5e737204ff1e0360b76fc2a4b 1004 main/binary-amd64/Packages
+ 36b5158b99cea24e688bbd07e0e9d01eb56ce82f 640 main/binary-amd64/Packages.gz
  bd4cc77f1a027f086a38fc546a38a718f2588395 150 main/binary-amd64/Release
 SHA256:
- ad56a67eee0948bc4d75ca3ce85dbcfa1b91223e76172cdfa5939bcfeabfb3be 1004 main/binary-amd64/Packages
- 060f3309a1fcee501521f5a030efa493e1279e70cedc9f666c323ff9082c77d6 639 main/binary-amd64/Packages.gz
+ 935816019c45d17ed4a4a6b3399b10191806f5f8a4b5c5225770a9933c3f9449 1004 main/binary-amd64/Packages
+ 30581d32d3371161261d91c1ff0118390f049bd1fcff021a7c65ed04fb263556 640 main/binary-amd64/Packages.gz
  9ee1c21f61015c5a5eb70f97222850faea472143eaa86be769e5fbd0a8ce6ec8 150 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQQHuT4kdybqvh+SC0XwKh+neD2j0gUCapsh3wAKCRDwKh+neD2j
-0sWNAP4k9nNpeBb7AyOxILYDllW2i970PRLQydLL4oYNBia0ywD8DgBkgH7ewD2R
-JOdEtqngHN3s8D0cFk+5bo8UC+VOuwA=
-=8Va8
+iHUEARYKAB0WIQQHuT4kdybqvh+SC0XwKh+neD2j0gUCapswEAAKCRDwKh+neD2j
+0oIfAQDTAkINLXrJMuzy8lDuekzGS7WBH4aGaFHkn3FS0c/YgQEAuWpEOrR4jLHe
+1xttdRietJVUQ65oDro5plAKcbEA6w8=
+=Jt6P
 -----END PGP SIGNATURE-----

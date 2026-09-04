@@ -1,5 +1,5 @@
 Package: mint-dynamic-theme
-Version: 4.0.4-1+ubuntu2404
+Version: 4.0.5-1+ubuntu2404
 Architecture: all
 Maintainer: Axel Luna <me@axel-luna.com.ar>
 Installed-Size: 26525
@@ -7,11 +7,11 @@ Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-xapp-1.0, libglib2.0-bin, l
 Homepage: https://github.com/AxelExequielLuna/mint-dynamic-theme
 Priority: optional
 Section: x11
-Filename: pool/main/m/mint-dynamic-theme/mint-dynamic-theme_4.0.4-1+ubuntu2404_all.deb
-Size: 6630214
-SHA256: 9bf190a54c3198de6df8714476a8e8ebe41bc63ec8cabdf65bc781b13ee4c909
-SHA1: ed5e3dd964ae07feada60664904dbb3c608e4ec7
-MD5sum: 8b1ce200838632cc5e23982f06441ba4
+Filename: pool/main/m/mint-dynamic-theme/mint-dynamic-theme_4.0.5-1+ubuntu2404_all.deb
+Size: 6631102
+SHA256: c9d34ef97531b7593f004d79b0f49377feeb58a39e505e2f35a5d027a8f6a4f9
+SHA1: d3edd04a16e20ded32e353810d20a4233ce9fb55
+MD5sum: 6c722c06530608e1ef3b6c0afbe42669
 Description: Dynamic theme switcher for Linux Mint (Cinnamon, MATE, XFCE)
  Automatically changes the GTK, icon and desktop theme based on
  the dominant color of the current wallpaper.
