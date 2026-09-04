@@ -1,0 +1,17 @@
+Origin: Axel APT (Ubuntu)
+Label: Axel APT (Ubuntu)
+Suite: stable
+Codename: ubuntu2204
+Components: main
+Architectures: all
+SignWith: yes
+Description: Axel's apps for Ubuntu-based Mint
+
+Origin: Axel APT (Ubuntu)
+Label: Axel APT (Ubuntu)
+Suite: stable
+Codename: ubuntu2404
+Components: main
+Architectures: all
+SignWith: yes
+Description: Axel's apps for Ubuntu-based Mint

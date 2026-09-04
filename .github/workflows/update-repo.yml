@@ -1,0 +1,59 @@
+name: Update APT repo
+
+on:
+  repository_dispatch:
+    types: [publish]
+
+# Serializa los dispatches que llegan a este repo (p. ej. ubuntu2204 y ubuntu2404)
+# para no pisarse en el push a la rama.
+concurrency:
+  group: apt-repo-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      APP_REPO: ${{ github.event.client_payload.repo }}
+      TAG: ${{ github.event.client_payload.tag }}
+      APP: ${{ github.event.client_payload.app }}
+      VERSION: ${{ github.event.client_payload.version }}
+      CODENAME: ${{ github.event.client_payload.codename }}
+      ARTIFACT: ${{ github.event.client_payload.artifact }}
+      KEEP_VERSIONS: "2"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install reprepro
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq reprepro gnupg2
+
+      - name: Import signing key
+        env:
+          KEY: ${{ secrets.APT_GPG_PRIVATE_KEY }}
+        run: |
+          echo "$KEY" | gpg --batch --import
+
+      - name: Download artifact from app release
+        run: |
+          mkdir -p incoming
+          curl -fsSL -o "incoming/$ARTIFACT" \
+            "https://github.com/$APP_REPO/releases/download/$TAG/$ARTIFACT"
+
+      - name: Include package
+        run: |
+          reprepro -b . includedeb "$CODENAME" "incoming/$ARTIFACT"
+
+      - name: Prune older versions
+        run: |
+          reprepro -b . keeps "$CODENAME" "$KEEP_VERSIONS"
+
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Publish $APP $VERSION into $CODENAME"
