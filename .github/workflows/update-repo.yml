@@ -53,6 +53,7 @@ jobs:
           # sea distinto. Se repackea con una revisión "+<codename>" para que cada
           # base tenga su propio archivo de pool y su versión.
           PKGVER="$VERSION-1+$CODENAME"
+          mkdir -p "repack"
           rm -rf "repack/$CODENAME"
           dpkg-deb -R "incoming/$ARTIFACT" "repack/$CODENAME"
           sed "s/^Version:.*/Version: $PKGVER/" -i "repack/$CODENAME/DEBIAN/control"
